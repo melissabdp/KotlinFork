@@ -12,20 +12,21 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val i = intent
-            //Cria um Intent para iniciar a atividade PedidoActivity
             
+            //Cria um Intent
+            val i = intent           
+            
+            //Cria um Intent para iniciar a atividade PedidoActivity
             val j = Intent(this,PedidoActivity::class.java)
-            //Cria um Intent para iniciar a atividade PedidoActivity
             
-            j.putExtras(i)
             //Adiciona os extras do Intent original ao novo Intent
+            j.putExtras(i)
             
-            startActivity(j)
             //Inicia a atividade
+            startActivity(j)
             
+            //O código será executado após um atraso de 2000 milissegundos
         },2000)
-        //O código será executado após um atraso de 2000 milissegundos
-
+        
     }
 }
