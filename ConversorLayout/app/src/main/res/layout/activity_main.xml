@@ -33,6 +33,6 @@
         android:textSize="50dp"
         android:id="@+id/textResultado"
         android:gravity="center"
-        android:text="R$"/>
+        android:text="Melissa 1204"/>
 
 </LinearLayout>
